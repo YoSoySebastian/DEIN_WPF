@@ -1,0 +1,16 @@
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\bin\Debug\Proyecto_Interfaces.exe.config
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\bin\Debug\Proyecto_Interfaces.exe
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\bin\Debug\Proyecto_Interfaces.pdb
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces.csproj.AssemblyReference.cache
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\MainWindow.g.cs
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\App.g.cs
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces_MarkupCompile.cache
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces_MarkupCompile.lref
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\MainWindow.baml
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces.g.resources
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces.Properties.Resources.resources
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces.csproj.GenerateResource.cache
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces.exe
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces.pdb
+C:\Users\Sombr\source\repos\Proyecto_Interfaces\Proyecto_Interfaces\obj\Debug\Proyecto_Interfaces.exe.config
