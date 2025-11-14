@@ -1,0 +1,134 @@
+﻿<Window x:Class="Proyecto_DEIN.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="Login" Height="833" Width="383"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="Transparent">
+
+
+    <Window.Resources>
+        <!-- Converter estándar de WPF -->
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </Window.Resources>
+
+    <Border CornerRadius="25" Background="#8C95B0">
+        <Grid>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,40,0,0">
+
+                <!-- Ícono superior -->
+                <Ellipse Width="100" Height="100" Fill="#03A9E9">
+                    <Ellipse.Effect>
+                        <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
+                    </Ellipse.Effect>
+                </Ellipse>
+
+                <!-- Texto Login -->
+                <TextBlock Text="Login"
+                           FontSize="26"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           Margin="0,20,0,30"
+                           HorizontalAlignment="Center"/>
+
+                <!-- Ícono de usuario -->
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,0,0,20">
+                    <Ellipse Width="20" Height="20" Fill="White"/>
+                    <Rectangle Width="30" Height="10" Fill="White" RadiusX="5" RadiusY="5" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <!-- Campo Usuario -->
+                <Border Background="White" CornerRadius="15" Margin="0,0,0,15" Width="270">
+                    <Grid>
+                        <!-- TextBox -->
+                        <TextBox x:Name="txtUsuario"
+                         Background="Transparent"
+                         BorderBrush="Transparent"
+                         FontSize="14"
+                         Padding="8"
+                         Foreground="Black"/>
+
+                        <!-- Placeholder -->
+                        <TextBlock Text="Usuario"
+                           Foreground="Gray"
+                           FontSize="14"
+                           Padding="8"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           IsHitTestVisible="False">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <!-- Por defecto colapsado si hay texto -->
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                    <Style.Triggers>
+                                        <!-- Si no hay texto, mostrar -->
+                                        <DataTrigger Binding="{Binding Text.Length, ElementName=txtUsuario}" Value="0">
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Grid>
+                </Border>
+
+
+				<!-- Campo Contraseña modificado -->
+				<Border Background="White" CornerRadius="15" Margin="0,0,0,15" Width="270">
+					<Grid>
+						<PasswordBox x:Name="txtPassword"
+									 Background="Transparent"
+									 BorderBrush="Transparent"
+									 FontSize="14"
+									 Padding="8"
+									 Foreground="Black"
+									 PasswordChanged="PasswordBox_PasswordChanged"/>
+
+						<!-- Placeholder -->
+						<TextBlock x:Name="placeholderPassword"
+								   Text="Contraseña"
+								   Foreground="Gray"
+								   FontSize="14"
+								   Padding="8"
+								   VerticalAlignment="Center"
+								   HorizontalAlignment="Left"
+								   IsHitTestVisible="False"/>
+					</Grid>
+				</Border>
+
+
+				<!-- Botón Login -->
+                <Border Background="#1692FF" CornerRadius="15" Margin="0,0,0,15" Width="130" Height="35">
+                    <Button Content="Login"
+                    Width="130"
+                    Height="35"
+                    Background="Transparent"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    BorderBrush="Transparent"
+                    Cursor="Hand"
+                    Click="Button_click"
+                    HorizontalAlignment="Center"/>
+                </Border>
+
+
+                <!-- Checkbox -->
+                <CheckBox Content="Recordar usuario"
+                          FontSize="13"
+                          FontFamily="Arial"
+                          Foreground="White"
+                          Margin="0,5,0,0"
+                          HorizontalAlignment="Center"/>
+
+                <!-- Enlace -->
+                <TextBlock Margin="0,10,0,0" HorizontalAlignment="Center">
+                    <Hyperlink Foreground="#1692FF">
+                        ¿Has olvidado tu contraseña?
+                    </Hyperlink>
+                </TextBlock>
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
