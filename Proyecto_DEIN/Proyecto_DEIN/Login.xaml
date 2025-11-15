@@ -18,15 +18,11 @@
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,40,0,0">
 
                 <!-- Ícono superior -->
-                <Ellipse Width="100" Height="100" Fill="#03A9E9">
-                    <Ellipse.Effect>
-                        <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
-                    </Ellipse.Effect>
-                </Ellipse>
+                <Image Source="/imagenes/logo.png" Width="100"/>
 
                 <!-- Texto Login -->
                 <TextBlock Text="Login"
-                           FontSize="26"
+                           FontSize="30"
                            FontWeight="Bold"
                            Foreground="White"
                            Margin="0,20,0,30"
@@ -34,8 +30,7 @@
 
                 <!-- Ícono de usuario -->
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,0,0,20">
-                    <Ellipse Width="20" Height="20" Fill="White"/>
-                    <Rectangle Width="30" Height="10" Fill="White" RadiusX="5" RadiusY="5" Margin="0,5,0,0"/>
+                    <Image Source="/imagenes/user.png" Width="60"/>
                 </StackPanel>
 
                 <!-- Campo Usuario -->
